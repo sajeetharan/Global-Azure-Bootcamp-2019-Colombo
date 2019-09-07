@@ -1,21 +1,21 @@
-import 'phaser';
-import { Game } from './game';
+import "phaser";
+import { Game } from "./game";
 import { Score } from "./score";
 
 const config: GameConfig = {
-  title: 'GABCHero',
-  width: 800,
+  title: "GABCHero",
+  width: "100%",
   height: 600,
-  parent: 'game',
-  scene: [ Game, Score ],
+  parent: "game",
+  scene: [Game, Score],
   physics: {
-    default: 'arcade',
+    default: "arcade",
     arcade: {
       gravity: { y: 70 },
       debug: true
     }
   },
-  backgroundColor: '#0078d7'
+  backgroundColor: "#bfbfbf"
 };
 
 export class GabcheroGame extends Phaser.Game {
